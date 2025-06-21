@@ -16,7 +16,7 @@ export const WeatherProvider = ({ children }) => {
 
     try {
       const res = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=Dhaka&appid=2e758dbdde0c313750d78fa22ce2a9fb&units=metric
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2e758dbdde0c313750d78fa22ce2a9fb&units=metric
 `
       );
       const data = await res.json();
